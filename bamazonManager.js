@@ -54,16 +54,17 @@ function displayAll(){
       console.log('');
       console.log('-------------Inventory---------------');
       console.log('');
-      for(var i = 0; i < results.length; i++){
+      console.table(results);
+      // for(var i = 0; i < results.length; i++){
 
-        console.log("ID: " + results[i].item_id + 
-          "\nItem Name: " + results[i].product_name +
-          "\nDepartment: " + results[i].department_name +
-          "\nStock: " + results[i].stock_quantity +
-          "\nPrice: $" + results[i].price);
-        console.log(" ");
-        console.log(" ");
-      }
+      //   console.log("ID: " + results[i].item_id + 
+      //     "\nItem Name: " + results[i].product_name +
+      //     "\nDepartment: " + results[i].department_name +
+      //     "\nStock: " + results[i].stock_quantity +
+      //     "\nPrice: $" + results[i].price);
+      //   console.log(" ");
+      //   console.log(" ");
+      // }
       inquirer
         .prompt([
         {
@@ -91,15 +92,16 @@ function lowInventory(){
         console.log("No low inventory.");
         whatToDo();
       } else {
-        for(var i = 0; i < results.length; i++){
-          console.log("ID: " + results[i].item_id + 
-            "\nItem Name: " + results[i].product_name +
-            "\nDepartment: " + results[i].department_name +
-            "\nStock: " + results[i].stock_quantity +
-            "\nPrice: $" + results[i].price);
-          console.log(" ");
-          console.log(" ")
-        }
+        console.table(results);
+        // for(var i = 0; i < results.length; i++){
+        //   console.log("ID: " + results[i].item_id + 
+        //     "\nItem Name: " + results[i].product_name +
+        //     "\nDepartment: " + results[i].department_name +
+        //     "\nStock: " + results[i].stock_quantity +
+        //     "\nPrice: $" + results[i].price);
+        //   console.log(" ");
+        //   console.log(" ")
+        // }
         whatToDo();
       }
   })
@@ -218,10 +220,10 @@ function addItem(){
       connection.query(
         "INSERT INTO products SET ?",
         {
-          product_name: answer.item_id,
-          department_name: answer.department_name,
+          product_name: answer.item,
+          department_name: answer.department,
           price: answer.price,
-          stock_quantity: answer.stock_quantity
+          stock_quantity: answer.stock
         },
         function(err) {
           if (err) throw err;

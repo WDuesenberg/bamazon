@@ -25,7 +25,4 @@ The first should ask them the ID of the product they would like to buy.
     If a manager selects Add New Product, it should allow the manager to add a completely new product to the store.
 
 # Video Links
-First Video
-https://drive.google.com/file/d/1fDZvwa3kxEOZ7iBVBLVgVU_TUs6eH-wz/view
-Second Video
-https://drive.google.com/file/d/1_ciNDUb-VIiM9M5GLjGF-eZa3Phx5mF_/view
+Google Video: https://drive.google.com/file/d/1agVNZtqf7uSzhV6EI4GcFbCq-W00ei-Q/view
