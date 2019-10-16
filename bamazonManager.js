@@ -116,7 +116,7 @@ function restockItem(item){
               name: "quantity"
           }
     ]).then(function(answer){
-      var input = parseInt(answer.stock_quantity);
+      var input = parseInt(answer.quantity);
 
       if(input <= 0){
         console.log("Insufficient Quantity.");
@@ -167,14 +167,15 @@ function addInventory(){
         connection.query("SELECT * FROM products WHERE ?",
           [
             {
-              item_id: item.item_id
+              item_id: item.id
             }
           ], function(err, results) {
             if (err) throw err;
             var product = results[0];
+            // console.log(product.item_id);
             console.log("You selected: ");
             console.log(product.product_name);
-            restockItem(product_name);
+            restockItem(product);
           }
         );
       })

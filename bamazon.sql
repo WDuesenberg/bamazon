@@ -9,7 +9,7 @@ CREATE TABLE products (
   department_name VARCHAR(100) NULL,
   price DECIMAL(10,4) NULL,
   stock_quantity DECIMAL(10,4) NULL,
-  PRIMARY KEY (position)
+  PRIMARY KEY (item_id)
 );
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
