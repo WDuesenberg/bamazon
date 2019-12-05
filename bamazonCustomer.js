@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
     host: "localhost",
 
     //Your PORT; if not 8889
-    port: 8889,
+    port: 3306,
 
     // your username
     user: "root",
