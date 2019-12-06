@@ -157,7 +157,6 @@ function addInventory(){
           ], function(err, results) {
             if (err) throw err;
             var product = results[0];
-            // console.log(product.item_id);
             console.log("You selected: ");
             console.log(product.product_name);
             restockItem(product);
