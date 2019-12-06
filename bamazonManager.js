@@ -57,16 +57,7 @@ function displayAll(){
       console.log('-------------Inventory---------------');
       console.log('');
       console.table(results);
-      // for(var i = 0; i < results.length; i++){
-
-      //   console.log("ID: " + results[i].item_id + 
-      //     "\nItem Name: " + results[i].product_name +
-      //     "\nDepartment: " + results[i].department_name +
-      //     "\nStock: " + results[i].stock_quantity +
-      //     "\nPrice: $" + results[i].price);
-      //   console.log(" ");
-      //   console.log(" ");
-      // }
+      
       inquirer
         .prompt([
         {
@@ -95,15 +86,7 @@ function lowInventory(){
         whatToDo();
       } else {
         console.table(results);
-        // for(var i = 0; i < results.length; i++){
-        //   console.log("ID: " + results[i].item_id + 
-        //     "\nItem Name: " + results[i].product_name +
-        //     "\nDepartment: " + results[i].department_name +
-        //     "\nStock: " + results[i].stock_quantity +
-        //     "\nPrice: $" + results[i].price);
-        //   console.log(" ");
-        //   console.log(" ")
-        // }
+        
         whatToDo();
       }
   })
@@ -237,3 +220,26 @@ function addItem(){
       );
     });
 }
+
+// Used previously for function displayAll
+// for(var i = 0; i < results.length; i++){
+
+      //   console.log("ID: " + results[i].item_id + 
+      //     "\nItem Name: " + results[i].product_name +
+      //     "\nDepartment: " + results[i].department_name +
+      //     "\nStock: " + results[i].stock_quantity +
+      //     "\nPrice: $" + results[i].price);
+      //   console.log(" ");
+      //   console.log(" ");
+      // }
+
+// Used previously for function lowInventory      
+// for(var i = 0; i < results.length; i++){
+        //   console.log("ID: " + results[i].item_id + 
+        //     "\nItem Name: " + results[i].product_name +
+        //     "\nDepartment: " + results[i].department_name +
+        //     "\nStock: " + results[i].stock_quantity +
+        //     "\nPrice: $" + results[i].price);
+        //   console.log(" ");
+        //   console.log(" ")
+        // }

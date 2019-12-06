@@ -40,7 +40,7 @@ INSERT INTO products (item_id, product_name, department_name, price, stock_quant
 VALUES (05, "cuisinart air fryer", "appliances", 300.00, 23);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUES (05, "Bob Ross: Stop Sucking!", "literature", 211.00, 0);
+VALUES (111, "Bob Ross: Stop Sucking!", "literature", 211.00, 0);
 
 SELECT * FROM products;
 

@@ -28,16 +28,7 @@ function products() {
         console.log('------------Inventory-----------');
         console.log('');
         console.table(res);
-        // for (var i = 0; i < res.length; i++) {
-        //     console.log('Item ID: ' + res[i].item_id);
-        //     console.log('Product: ' + res[i].product_name);
-        //     console.log('Department: ' + res[i].department_name);
-        //     console.log('Price: ' + res[i].price);
-        //     console.log('Stocked Quantity: ' + res[i].stock_quantity);
-        //     console.log(' ');
-        //     console.log(' ');
-        // }
-
+ 
         start();
     });
 }
@@ -109,6 +100,14 @@ function start() {
         });
     });
 }
-                        
 
-            
+        // Used previously for function products
+       // for (var i = 0; i < res.length; i++) {
+        //     console.log('Item ID: ' + res[i].item_id);
+        //     console.log('Product: ' + res[i].product_name);
+        //     console.log('Department: ' + res[i].department_name);
+        //     console.log('Price: ' + res[i].price);
+        //     console.log('Stocked Quantity: ' + res[i].stock_quantity);
+        //     console.log(' ');
+        //     console.log(' ');
+        // }
