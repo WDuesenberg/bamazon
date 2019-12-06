@@ -4,10 +4,10 @@ var inquirer = require("inquirer");
 var connection = mysql.createConnection({
     host: "localhost",
 
-    //Your PORT; if not 8889
+    // Your PORT; if not 3306
     port: 3306,
 
-    // your username
+    // Your username
     user: "root",
 
     // Your password
