@@ -1,7 +1,14 @@
 # Bamazon
  
-**Overview** 
-Bamazon's purpose is to replicate the basic functions seen on the worlds favorite digital consumption giant by using the technologies and languages listed. It also requires both MySQL and Inquirer npm packages to function through the users terminal/GitBash
+**Overview**
+
+Bamazon's purpose is to replicate the basic functions seen on the worlds popular digital consumption giant by using the technologies and languages listed. The user may purchase items from the registry as well as add items and keep track of the registry stock.
+
+*Technology:*
+    - JavaScript
+    - Node.js
+    - MySQL
+    - Inquirer
 
 # Customer Instructions
 
