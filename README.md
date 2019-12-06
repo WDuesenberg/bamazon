@@ -1,7 +1,6 @@
 # Bamazon
-Bamazon is a back end web application that relies on MySQL, JavaScript and Node.js 
-
-# Overview 
+ 
+**Overview** 
 Bamazon's purpose is to replicate the basic functions seen on the worlds favorite digital consumption giant by using the technologies and languages listed. It also requires both MySQL and Inquirer npm packages to function through the users terminal/GitBash
 
 # Customer Instructions
